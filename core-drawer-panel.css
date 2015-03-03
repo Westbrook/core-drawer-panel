@@ -22,6 +22,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   transform: translateX(-100%);
 }
 
+polyfill-next-selector { content: 'core-selector [core-drawer-alt]'; }
+:host(:not([narrowonly])) ::content [core-drawer-alt] {
+  display: none;
+}
+
+polyfill-next-selector { content: 'core-selector [core-drawer-alt-logo]'; }
+:host(:not([narrowonly])) ::content [core-drawer-alt-logo] {
+  display: none;
+}
+
 core-selector > #drawer {
   position: absolute;
   top: 0;
